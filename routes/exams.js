@@ -34,8 +34,8 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
       return {
         From: {
           Email: `	
-                    drnareshchauhan@gmail.com`,
-          Name: `Naresh Chauhan`,
+          drnareshchauhan@psmsurat.com`,
+          Name: `naresh`,
         },
         To: [
           {
