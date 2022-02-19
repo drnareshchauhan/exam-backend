@@ -74,7 +74,7 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
                         </table>
                         <table>
                             <tbody>
-                                <tr><td>Exam link</td><td><a href='https://oeportal.herokuapp.com/examlive/${
+                                <tr><td>Exam link</td><td><a href='https://psmoe.vercel.app/examlive/${
                                   foundElement._id
                                 }/${
           foundElement.exams.find(
