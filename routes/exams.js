@@ -59,17 +59,17 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
                                 <tr><td>Start Time</td><td>${moment(
                                   compiledObjectExam.startDateTime
                                 )
-                                  .utc()
+                                  .local()
                                   .format(
                                     "MMMM Do YYYY, h:mm:ss a"
-                                  )} UTC/GMT</td></tr>
+                                  )} for India</td></tr>
                                 <tr><td>End Time</td><td>${moment(
                                   compiledObjectExam.endDateTime
                                 )
-                                  .utc()
+                                  .local()
                                   .format(
                                     "MMMM Do YYYY, h:mm:ss a"
-                                  )} UTC/GMT</td></tr>
+                                  )} for India</td></tr>
                             </tbody>
                         </table>
                         <table>
