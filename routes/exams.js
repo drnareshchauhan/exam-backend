@@ -66,9 +66,11 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
                                   )} UTC/GMT</td></tr>
                                 <tr><td>End Time</td><td>${moment(
                                   compiledObjectExam.endDateTime
-                                ).utc.format(
-                                  "MMMM Do YYYY, h:mm:ss a"
-                                )} UTC/GMT</td></tr>
+                                )
+                                  .utc()
+                                  .format(
+                                    "MMMM Do YYYY, h:mm:ss a"
+                                  )} UTC/GMT</td></tr>
                             </tbody>
                         </table>
                         <table>
