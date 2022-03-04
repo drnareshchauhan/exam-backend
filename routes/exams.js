@@ -52,29 +52,21 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
                     <center>
                         <h1>Login Credentials & details for the Exam</h1>
                         <table>
+                            
                             <tbody>
                                 <tr><td>Exam</td><td>${
                                   compiledObjectExam.examName
                                 }</td></tr>
                                 <tr><td>Start Time</td><td>${moment(
                                   compiledObjectExam.startDateTime
-                                ).toString()} for Indian Local Time</td></tr>
+                                )
+                                  .utc()
+                                  .format(
+                                    "MMMM Do YYYY, h:mm:ss a"
+                                  )} UTC/GMT</td></tr>
                                 <tr><td>End Time</td><td>${moment(
                                   compiledObjectExam.endDateTime
-                                ).toString()} for Indian Local Time</td></tr>
-                            </tbody>
-                            <tbody>
-                                <tr><td>Exam</td><td>${
-                                  compiledObjectExam.examName
-                                }</td></tr>
-                                <tr><td>Start Time</td><td>${moment(
-                                  compiledObjectExam.startDateTime
-                                ).format(
-                                  "MMMM Do YYYY, h:mm:ss a"
-                                )} UTC/GMT</td></tr>
-                                <tr><td>End Time</td><td>${moment(
-                                  compiledObjectExam.endDateTime
-                                ).format(
+                                ).utc.format(
                                   "MMMM Do YYYY, h:mm:ss a"
                                 )} UTC/GMT</td></tr>
                             </tbody>
