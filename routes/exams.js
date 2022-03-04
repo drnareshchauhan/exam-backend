@@ -58,14 +58,10 @@ function sendEmails(compiledObjectExam, foundElement, candidateList) {
                                 }</td></tr>
                                 <tr><td>Start Time</td><td>${moment(
                                   compiledObjectExam.startDateTime
-                                ).format(
-                                  "MMMM Do YYYY, h:mm:ss a"
-                                )} for Indian Local Time</td></tr>
+                                ).toString()} for Indian Local Time</td></tr>
                                 <tr><td>End Time</td><td>${moment(
                                   compiledObjectExam.endDateTime
-                                ).format(
-                                  "MMMM Do YYYY, h:mm:ss a"
-                                )} for Indian Local Time</td></tr>
+                                ).toString()} for Indian Local Time</td></tr>
                             </tbody>
                             <tbody>
                                 <tr><td>Exam</td><td>${
